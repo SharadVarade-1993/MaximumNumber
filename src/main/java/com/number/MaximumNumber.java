@@ -33,8 +33,12 @@ public class MaximumNumber<N extends Comparable> {
                 max=option[0];
             }
         }
-
+        printMaxNumberFor_Integer_Float_String(max);
         return max;
+    }
+
+    private static <N extends Comparable> void printMaxNumberFor_Integer_Float_String(N max){
+        System.out.println(max);
     }
 
     public N getLargeNumber(){
