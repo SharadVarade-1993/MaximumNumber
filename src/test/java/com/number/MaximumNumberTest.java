@@ -60,5 +60,19 @@ public class MaximumNumberTest {
         Assert.assertEquals("Swapnil",maximumNumber.getLargeNumber());
     }
 
+    @Test
+    public void givenMultipleNumber_WhenIntegerIsMax_ShouldReturnMaxNumber() {
+        Assert.assertSame(8,MaximumNumber.getLargeNumber(6,5,7,3,8));
+    }
+
+    @Test
+    public void givenMultipleFloats_WhenFloatIsMax_ShouldreturnMaxFloatNumber(){
+        Assert.assertEquals(25.5f,MaximumNumber.getLargeNumber(4.2f,7f,9.8f,17.3f,25.5f),0.0);
+    }
+
+    @Test
+    public void givenMultipleString_WhenStringMax_ShouldReturnMaxString(){
+        Assert.assertSame("Swapnil",MaximumNumber.getLargeNumber("Ram","Sham","Rinku","Sharad","Swapnil"));
+    }
 
 }
